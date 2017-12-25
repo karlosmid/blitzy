@@ -93,13 +93,33 @@ When run is done:
 
 Here is one report ![](graph_example.png)
 
-## Building the Executable
+## Contribute
 
 ```
+install latest elixir for you os
+mix local.hex
+mix deps.get
 mix escript.build
 ```
-## Run tests
+### Run tests
 
 `MIX_ENV=test mix coveralls.html`
 
 `open cover/excoveralls.html`
+
+### Git
+
+```
+create branch in github
+git fetch
+git checkout branch_name
+git push
+create pull request using github
+```
+
+### Notes
+
+```
+create tests for your contribution
+run tests
+```
