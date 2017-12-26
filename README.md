@@ -93,6 +93,16 @@ When run is done:
 
 Here is one report ![](graph_example.png)
 
+## Create scenario
+    ```
+    * you need to know elixir and http protocol
+    * in lib/scenario.ex create your scenario
+    * every step will get its own time duration
+    * run mix escript.build
+    * run blitzy
+    ```
+
+
 ## Contribute
 
 ```
@@ -103,9 +113,10 @@ mix escript.build
 ```
 ### Run tests
 
-`MIX_ENV=test mix coveralls.html`
-
+```
+MIX_ENV=test mix coveralls.html`
 `open cover/excoveralls.html`
+```
 
 ### Git
 

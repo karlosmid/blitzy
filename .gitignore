@@ -8,3 +8,4 @@ cover
 *.html
 results.txt
 config/secrets.exs
+lib/scenario.ex
