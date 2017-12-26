@@ -5,7 +5,7 @@ defmodule Blitzy.Scenarios do
                "Accept" => "application/json, text/plain, */*", "Connection" => "keep-alive"}  
 
   def get url do
-    Blitzy.Measure.duration_of_http_poison(fn -> HTTPoison.get(url,[],hackney: [:insecure]) end, "get")
+    Blitzy.Measure.duration_of_http_poison(fn -> HTTPoison.get(url,[],headers: @headers, hackney: [:insecure]) end, "get")
   end
   
   def get_mock url do

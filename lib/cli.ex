@@ -9,7 +9,7 @@ defmodule Blitzy.CLI do
 
     args
       |> parse_args
-      |> process_options([node|Node.list])
+      |> process_options([node()|Node.list])
   end
 
   def parse_args(args) do
@@ -25,7 +25,7 @@ defmodule Blitzy.CLI do
         Blitzy.Graph.create_graph_data(s)
         |> Blitzy.Graph.create_graph(s,o)
       _ ->
-        do_help
+        do_help()
 
     end
   end

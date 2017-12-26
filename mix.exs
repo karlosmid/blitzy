@@ -3,10 +3,10 @@ defmodule Blitzy.Mixfile do
 
   def project do
     [app: :blitzy,
-     version: "0.0.2",
-     elixir: "~> 1.1",
-     escript: escript,
-     deps: deps,
+     version: "0.0.3",
+     elixir: "~> 1.5",
+     escript: escript(),
+     deps: deps(),
      test_coverage: [tool: ExCoveralls],
      preferred_cli_env: ["coveralls": :test, "coveralls.detail": :test, "coveralls.post": :test, "coveralls.html": :test]
    ]
@@ -23,11 +23,11 @@ defmodule Blitzy.Mixfile do
 
   defp deps do
     [
-      {:httpoison, "~> 0.10.0"},
+      {:httpoison, "~> 0.13"},
       {:timex,     "~> 3.1"},
-      {:excoveralls, "~> 0.5", only: :test},
-      {:mock, "~> 0.2.0", only: :test},
-	  {:poison, "~> 3.0"}
+      {:excoveralls, "~> 0.8", only: :test},
+      {:mock, "~> 0.3.0", only: :test},
+	  {:poison, "~> 3.1"}
     ]
   end
 end
